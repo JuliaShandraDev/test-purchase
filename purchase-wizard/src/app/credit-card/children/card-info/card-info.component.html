@@ -1,1 +1,5 @@
-<p>card-info works!</p>
+<div class="col">
+  <div *ngFor="let inp of inputs">
+    <input [type]="inp.type" class="form-control mx-sm-3" [placeholder]="inp.title" />
+  </div>
+</div>

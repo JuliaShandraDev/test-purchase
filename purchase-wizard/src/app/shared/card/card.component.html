@@ -1,0 +1,17 @@
+<div class="card col centered">
+  <div ngbButton class="badge badge-secondary" *ngIf="isHighestPrice">Best offer</div>
+  <fa-icon [icon]="faCoffee"></fa-icon>
+    <ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0">
+      <ngb-panel title="Points">
+        <ng-template ngbPanelContent>
+          <ul>
+            <li *ngFor="let point of card?.points">
+              {{point}}
+            </li>
+          </ul>
+        </ng-template>
+      </ngb-panel>
+    </ngb-accordion>
+  <p>Price: {{card?.price}}</p>
+  <button ngbButton class="btn-primary"><a  [routerLink]="['/credit-card']">Select</a></button>
+</div>

@@ -5,16 +5,22 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PlanSectionComponent } from './plan-section/plan-section.component';
 import { CreditCardComponent } from './credit-card/credit-card.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { SharedComponent } from './shared/shared.component';
+import {SharedModule} from "./shared/shared.module";
 
 @NgModule({
   declarations: [
     AppComponent,
     PlanSectionComponent,
-    CreditCardComponent
+    CreditCardComponent,
+    SharedComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,1 +1,3 @@
-<p>plan-section works!</p>
+<div class="row centered wrapper">
+    <app-card *ngFor="let card of cards" [card]="card" [isHighestPrice]="card.price === highestPrice"></app-card>
+</div>

@@ -7,9 +7,9 @@ import {PaymentResultComponent} from './children/payment-result/payment-result.c
 
 
 const routes: Routes = [
-  { path: '', component: CardInfoComponent, pathMatch: 'full' },
-  { path: '', component: OrderPreviewComponent, pathMatch: 'full' },
-  { path: '', component: PaymentResultComponent, pathMatch: 'full' }
+  { path: '', component: CardInfoComponent, pathMatch: 'full' , children: [ {path: '', component: OrderPreviewComponent, pathMatch: 'full'}]},
+  // { path: '', component: OrderPreviewComponent, pathMatch: 'full' },
+  // { path: '', component: PaymentResultComponent, pathMatch: 'full' }
 
 ];
 
